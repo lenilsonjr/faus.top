@@ -1,10 +1,18 @@
 !!!
 %html
   %head
+    = render partial: 'layouts/analytics'
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title faus.top
     %link{:href => asset_url('faustop.jpg'), :rel => "icon"}/
     
+    %meta{:content => "shortlink, faustão, faustop, linkshorten", :name => "keywords"}/
+    %meta{:content => "O encurtador de links mais Faustop da internet", :name => "description"}/
+    %meta{:content => "Encurtador de links faustop", :property => "og:title"}/
+    %meta{:content => "Encurte URLs grandes em links faus.top", :property => "og:description"}/
+    %meta{:content => "https://faus.top", :property => "og:url"}/
+    %meta{:content => "website", :property => "og:type"}/
+
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
