@@ -14,20 +14,3 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-  background: #e67e22;
-}
-html, body, .container-table {
-  height: 100%;
-}
-.form-control {
-  border-radius: 5px 0px 0px 5px!important;
-}
-.container-table {
-  display: table;
-}
-.vertical-center-row {
-  display: table-cell;
-  vertical-align: middle;
-}
