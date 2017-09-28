@@ -27,7 +27,7 @@
     top: 0;
     left: -20%;
     opacity: 0;
-    background: #3498db;
+    background: #34495e;
     pointer-events: none;
     transition: opacity .4s;
 }

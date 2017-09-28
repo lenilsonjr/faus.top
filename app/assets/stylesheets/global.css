@@ -1,6 +1,11 @@
 body {
-  background: #e67e22;
+  background: #fff;
 }
+
+.form-control {
+  background: #ecf0f1!important;
+}
+
 html, body, .container-table {
   height: 100%;
 }

@@ -3,6 +3,7 @@
     / Page Header
     .row
       .col-lg-8.col-md-offset-1.col-md-push-1
+        %img.center-block{src: asset_url('faustop.jpg')}
         .short-form
           = simple_form_for @link, remote: true, url: short_link_path do |f|
             .input-group.input-group-lg
