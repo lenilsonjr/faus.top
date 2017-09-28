@@ -1,0 +1,11 @@
+.row.vertical-center-row
+  .col-md-12
+    / Page Header
+    .row
+      .col-lg-8.col-md-offset-1.col-md-push-1
+        = simple_form_for :link do |f|
+          .input-group.input-group-lg
+            = f.input :link, placeholder: 'Cole aqui um link para encurtar...', input_html: { class: 'input-lg' }, label: false
+            %span.input-group-btn
+              %button.btn.btn-default.btn-sm{:type => "submit"}
+                %span.glyphicon.glyphicon-chevron-right
