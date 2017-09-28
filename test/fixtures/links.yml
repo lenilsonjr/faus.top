@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyText
+  code: MyString
+  use_count: 1
+  created_by: MyString
+
+two:
+  url: MyText
+  code: MyString
+  use_count: 1
+  created_by: MyString
