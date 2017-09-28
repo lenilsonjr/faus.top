@@ -15,7 +15,7 @@ class Link < ApplicationRecord
 
   private
     def set_code
-      self.code = SecureRandom.hex(3)  
+      self.code = SecureRandom.hex(2)  
     rescue ActiveRecord::RecordNotUnique => e
       @token_attempts ||= 0
       @token_attempts += 1
