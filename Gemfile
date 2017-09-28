@@ -41,6 +41,8 @@ gem 'simple_form'
 gem "haml-rails"
 
 source 'https://rails-assets.org' do
+  # Animate css
+  gem 'rails-assets-animate-css'
   # Bootstrap
   gem 'rails-assets-bootstrap', '3.3.7'
   #Igor Escobar jQuery Masks
