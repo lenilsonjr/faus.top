@@ -3,11 +3,19 @@
     / Page Header
     .row
       .col-lg-8.col-md-offset-1.col-md-push-1
-        = simple_form_for @link, remote: true, url: short_link_path do |f|
-          .input-group.input-group-lg
-            = f.input :url, as: :string, placeholder: 'Cole aqui um link para encurtar...', input_html: { class: 'input-lg' }, label: false
-            %span.input-group-btn
-              %button.btn.btn-default.btn-sm{:type => "submit"}
-                %span.glyphicon.glyphicon-chevron-right
+        .short-form
+          = simple_form_for @link, remote: true, url: short_link_path do |f|
+            .input-group.input-group-lg
+              = f.input :url, as: :string, placeholder: 'Cole aqui um link para encurtar...', input_html: { class: 'input-lg' }, label: false
+              %span.input-group-btn
+                %button.btn.btn-default.btn-sm{:type => "submit"}
+                  %span.glyphicon.glyphicon-chevron-right
+        .shortened-link{:style => "display: none"}
+          = simple_form_for :link do |f|
+            .input-group.input-group-lg
+              = f.input :url, as: :string, placeholder: 'Cole aqui um link para encurtar...', input_html: { class: 'input-lg' }, label: false, disabled: true
+              %span.input-group-btn
+                %button.btn.btn-default.redo-link.btn-sm{:type => "button"}
+                  %span.glyphicon.glyphicon.glyphicon-ok
 
 = render partial: 'layouts/shortened'

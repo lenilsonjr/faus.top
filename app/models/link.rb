@@ -5,6 +5,14 @@ class Link < ApplicationRecord
 
   before_create :set_code
 
+  def shortened(url = nil)
+    if url.nil?
+      code
+    else
+      "#{url}/#{code}"
+    end
+  end
+
   private
     def set_code
       self.code = SecureRandom.hex(3)  

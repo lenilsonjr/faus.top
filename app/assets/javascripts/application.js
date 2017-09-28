@@ -15,3 +15,15 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+
+  $('.redo-link').click(function(){
+
+    $('.short-form').find('input').val('');
+    $('.shortened-link').fadeOut();
+    $('.short-form').fadeIn();
+
+  });
+
+});

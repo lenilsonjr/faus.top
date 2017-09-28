@@ -1,6 +1,5 @@
 var messages = ["OLOCO, MEU!", "É HORA DE ALEGRIA!", "TÁ PEGANDO FOGO, BICHO!", "ESSA FERA AÍ, BICHO!", "ERRROOOU!", "É BRINCADEIRA, MEU!"];
 
-
 function shortAnimate(){
 
   $(".shortened").css({

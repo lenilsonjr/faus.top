@@ -1,1 +1,4 @@
+$('.shortened-link').find('input').val('<%= @link.shortened(request.base_url) %>');
+$('.short-form').fadeOut();
+$('.shortened-link').fadeIn();
 shortAnimate();
